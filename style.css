@@ -158,3 +158,43 @@
     width: 60px;
     height: 20px;
 }
+
+/* esercizio 12 */
+/* hover per lo spazio superiore, con l'animazione destra che durerá 3 secondi in modo lineare senza delay */
+.ex-12-button:hover .ex-12-top-white{
+    animation: destra 3s linear 0s;
+}
+/* keyframes destra per dire cosa succede */
+@keyframes destra{
+    0%{
+        /* all'inizio parte dal suo posto */
+        left: 10%;
+    }
+    50%{
+        /* si sposterá verso destra */
+        left: 60% ;
+    }
+    100%{
+        /* tornerá al suo punto di partenza */
+        left: 10%;
+    }
+}
+/* hover per lo spazio inferiore, con l'animazione seinistra che durerá 3 secondi in modo lineare senza delay */
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: sinistra 3s linear 0s;
+}
+/* keyframes sinistra per dire cosa succede */
+@keyframes sinistra{
+    0%{
+        /* all'inizio parte dal suo posto */
+        right: 20%;
+    }
+    50%{
+        /* si sposterá verso sinistra */
+        right:60% ;
+    }
+    100%{
+        /* tornerá al suo punto di partenza */
+        right: 20%;
+    }
+}
