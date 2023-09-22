@@ -31,17 +31,32 @@
 .ex-3-square:hover{
     border-radius: 50%;
 }
-
 .ex-4-square {
     width: 100px;
     height: 100px;
     background: red;
+    /* transition di 5 secondi per farlo fradualmente */
+    transition: all 5s;
+}
+/* hover per far sparire il quadrato */
+.ex-4-square:hover{
+    opacity: 0;
 }
 .ex-5-square {
     margin: 20px;
     width: 60px;
     height: 60px;
     background: red;
+    /* transition di 3 secondi per farlo gradualmente */
+    transition: all 3s;
+}
+/* hover con transform:scale in modo da renderlo il doppio piú grande quando ci passiamo sopra */
+.ex-5-square:hover{
+    transform: scale(2);
+}
+/* active con transform:scale in modo da renderlo la metá quando ci si clicca sopra */
+.ex-5-square:active{
+    transform: scale(0.5);
 }
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
