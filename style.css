@@ -96,9 +96,38 @@
 }
 .ex-10-icon {
     font-size: 60px;
+    /* animazione per farlo girare, nome animazione: gira1, tempo del giro: 1 sec, modo: linear , delay: 0s e all'infinito*/
+    animation: gira1 1s linear 0s infinite ;
+}
+/* keyframes gira1 , per dire cosa succede */
+@keyframes gira1 {
+    0%
+        {
+            /* transform che fa roteare l'immagine */
+            transform: rotate(360deg);
+    }
 }
 .ex-11-icon {
     font-size: 60px;
+}
+/* animazione per farlo girare, nome animazione: gira2, tempo del giro: 2 sec, modo: ease-out cosi da farlo tornare velocemente indietro , delay: 0s*/
+.ex-11-icon:hover{
+    animation: gira2 2s ease-out 0s;
+}
+/* keyframes gira2 , per dire cosa succede */
+@keyframes gira2 {
+    0%{
+        /* transform che fa roteare l'immagine */
+        transform: rotate(0);
+    }
+    75%{
+        /* transform che fa roteare l'immagine fino a 3/4 */
+        transform: rotate(270deg);
+    }
+    100%{
+        /* transform che fa roteare indietro l'immagine */
+        transform: rotate(0);
+    }
 }
 .ex-12-button, .ex-13-button {
     position: relative;
