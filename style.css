@@ -179,7 +179,7 @@
         left: 10%;
     }
 }
-/* hover per lo spazio inferiore, con l'animazione seinistra che durerá 3 secondi in modo lineare senza delay */
+/* hover per lo spazio inferiore, con l'animazione sinistra che durerá 3 secondi in modo lineare senza delay */
 .ex-12-button:hover .ex-12-bottom-white{
     animation: sinistra 3s linear 0s;
 }
@@ -195,6 +195,86 @@
     }
     100%{
         /* tornerá al suo punto di partenza */
+        right: 20%;
+    }
+}
+
+
+
+
+/* esercizio 13 */
+/* hover per lo spazio superiore, con l'animazione girocompleto-destra che durerá 3 secondi in modo lineare senza delay */
+.ex-13-button:hover .ex-13-top-white{
+    animation: girocompleto-destra 3s linear 0s;
+}
+/* keyframes girocompleto-destra per dire cosa succede */
+@keyframes girocompleto-destra {
+    0%{
+        /* all'inizio parte dal suo posto */
+        top: -10px;
+        left: 10%;
+    }
+    25%{
+        /* si sposterá verso destra */
+        top: -10px;
+        left: calc(100% - 30px);
+    }
+    /* andrá verso l'angolo a destra */
+    50%{
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    /* scenderá dall'angolo a destra */
+    75%{
+        left: 0;
+        top: 100%;
+    }
+    /* percorrerá il lato inferiore verso l'angolo sinistro */
+    90%{
+        left: -15px;
+        top: -10px;
+    }
+    100%{
+        /* tornerá al suo punto di partenza */
+        top: -10px;
+        left: 10%;
+    } 
+    
+}
+/* hover per lo spazio inferiore, con l'animazione girocompleto-sinistra che durerá 3 secondi in modo lineare senza delay */
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: girocompleto-sinistra 3s linear 0s;
+}
+/* keyframes girocompleto-sinistra per dire cosa succede */
+@keyframes girocompleto-sinistra {
+    0%{
+        /* all'inizio parte dal suo posto */
+        bottom: -10px;
+        right: 20%;
+    }
+    /* si sposterá verso sinistra */
+    25%{
+        bottom: -10px;
+        right: calc(100% - 30px);
+    }
+    /* andrá verso l'angolo a sinistra */
+    50%{
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+    /* salirá sull'angolo a destra */
+    75%{
+        right: 0;
+        bottom: 100%;
+    }
+    /* percorrerá il lato superiore verso l'angolo destro */
+    90%{
+       right: -15px;
+        bottom: -10px;
+    }
+    100%{
+        /* tornerá al suo punto di partenza */
+        bottom: -10px;
         right: 20%;
     }
 }
