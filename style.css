@@ -2,11 +2,23 @@
     width: 100px;
     height: 100px;
     border: 1px solid red;
+    /* transition di 3 secondi per farlo gradualmente */
+    transition: all 3s;
+}
+/* hover per far si che quando ci si va sopra diventi rosso */
+.ex-1-square:hover{
+    background-color: red;
 }
 .ex-2-square {
     width: 100px;
     height: 100px;
     background: red;
+    /* transition di 5 secondi per farlo fradualmente */
+    transition: all 5s;
+}
+/* active per far si che quando ci si clicca aumenta la sua larghezza in modo da divenrtare un rettangolo*/
+.ex-2-square:active{
+    width: 100%;
 }
 .ex-3-square {
     width: 100px;
