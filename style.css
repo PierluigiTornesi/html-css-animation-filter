@@ -65,6 +65,23 @@
 .ex-6-img:hover{
     filter:grayscale(1);
 }
+/* transition di 3 secondi per farlo gradualmente */
+.ex-7-img{
+    transition: all 3s;
+}
+/* hover per far si che cambi colore l'immagine */
+.ex-7-img:hover{
+    filter: grayscale(1) sepia(0.7);
+}
+/* transition di 5 secondi per farlo gradualmente */
+.ex-8-img{
+    transition: all 5s;
+}
+/* hover per far si che cambi colore e diventi con i bordi arrotondati */
+.ex-8-img:hover{
+    border-radius: 30px;
+    filter: grayscale(1) sepia(0.7) ;
+}
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
