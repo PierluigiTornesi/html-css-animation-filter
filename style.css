@@ -85,6 +85,14 @@
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    /* transition di 3 secondi per farlo gradualmente */
+    transition: all 3s;
+}
+/* hover per far si che cambi colore, che i bordi diventino arrotondati e che l'immagine scali dimensione */
+.ex-9-img:hover{
+    border-radius: 30px;
+    filter: grayscale(1) sepia(0.7) ;
+    transform: scale(1.5);
 }
 .ex-10-icon {
     font-size: 60px;
