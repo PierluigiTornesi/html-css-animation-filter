@@ -24,7 +24,14 @@
     width: 100px;
     height: 100px;
     background: red;
+    /* transition di 5 secondi per farlo fradualmente */
+    transition: all 5s;
 }
+/* hover per far si che il quadrato diventi un cerchio */
+.ex-3-square:hover{
+    border-radius: 50%;
+}
+
 .ex-4-square {
     width: 100px;
     height: 100px;
